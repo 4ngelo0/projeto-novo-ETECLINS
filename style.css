@@ -5,7 +5,7 @@
 }
 
 body {
-    padding: 0px 59px;
+    padding: 0px 50px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,7 @@ body {
 }
 
 
-/* Menu */
+/* nav */
 
 .navbar {
     margin-top: 20px;
@@ -58,11 +58,228 @@ body {
     opacity: .5;
 }
 
+
+/* Home img */
+
 .img-home {
     border-radius: 10px;
     margin-top: 43px;
     background-image: url(/img/img-home.png);
     background-repeat: no-repeat;
-    height: 554px;
-    max-width: 10vw;
+    background-size: cover;
+    padding: 59px 76px 152px;
+    box-shadow: 0px 10px 50px #C6C4DF;
+}
+
+.img-home .rigth-text-home {
+    color: #fff;
+}
+
+.img-home .rigth-text-home h1 {
+    text-transform: uppercase;
+    width: 15em;
+    font-weight: 600;
+}
+
+.img-home .rigth-text-home p {
+    width: 20em;
+    font-weight: 400;
+    margin-top: 26px;
+    font-size: 1.3em;
+    line-height: 30px;
+    letter-spacing: -0.045em;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    background: #5CA6EB;
+    box-shadow: 0px 10px 20px rgba(65, 52, 220, 0.25);
+    border-radius: 15px;
+    margin-top: 35px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s;
+}
+
+.botao:hover {
+    transform: translateY(-7px) scale(1.05);
+}
+
+.botao span {
+    margin-left: 17px;
+    margin-top: 5px;
+}
+
+
+/* Qualidades */
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 60px;
+}
+
+.boxes .box {
+    background: #fff;
+    box-shadow: 0px 30px 20px rgba(198, 196, 223, 0.25);
+    border-radius: 10px 10px 0px 0px;
+    max-width: 270px;
+    transition: .3s;
+}
+
+.boxes .box:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.box::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 10px;
+    background: var(--blue);
+    width: 270px;
+    height: 14px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.boxes .box img {
+    height: 60px;
+    margin: 26px 0px 0px 26px;
+}
+
+.boxes .box h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 26px 0px 0px 26px;
+}
+
+.boxes .box p {
+    font-weight: 400;
+    max-width: 90%;
+    font-size: 16px;
+    color: var(--light-gray);
+    margin: 26px 35px 26px 26px;
+}
+
+
+/* Sobre Nós */
+
+.about-us {
+    margin-top: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .text-about {
+    max-width: 50%;
+    margin-right: 9%;
+    position: relative;
+    bottom: 30px;
+}
+
+.tittle-sections {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+}
+
+.about-us .text-about p {
+    max-width: 526px;
+    font-size: 1.4em;
+    margin-top: 30px;
+    color: var(--light-gray);
+}
+
+.about-us .img-about {
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+    background-image: url(/img/etec-img.png);
+    box-shadow: -10px -10px 20px rgba(198, 196, 223, 0.7);
+    border-radius: 20px 0px 0px 0px;
+    height: 317px;
+    width: 461px;
+}
+
+.about-us .img-about::after {
+    content: '';
+    display: block;
+    z-index: -5;
+    background: var(--blue);
+    height: 320px;
+    width: 461px;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 0px 10px 20px #C6C4DF;
+}
+
+
+/* Cursos */
+
+.cursos {
+    margin-top: 152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-cursos {
+    margin-right: 5%;
+}
+
+.text-cursos p {
+    max-width: 352px;
+    font-size: 1.2em;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    color: var(--light-gray);
+}
+
+.cursos .boxes-cursos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 12px;
+    max-width: 50vw;
+}
+
+.cursos .box-curso {
+    border-radius: 10px;
+    background: #fff;
+    padding: 21px 20px 5px 19px;
+    box-shadow: 0px 0px 20px #C6C4DF;
+    transition: 0.3s;
+}
+
+.cursos .box-curso:hover {
+    transform: scale(1.09);
+}
+
+.cursos .box-curso .tittle-curso {
+    display: flex;
+    align-items: center;
+}
+
+.cursos .box-curso .tittle-curso span img {
+    height: 2em;
+}
+
+.cursos .box-curso h1 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.cursos .box-curso p {
+    color: var(--light-gray);
+    font-weight: 500;
+    font-size: 15px;
 }
