@@ -5,12 +5,16 @@
 }
 
 body {
-    padding: 0px 50px;
+    padding: 0;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     background: #F9FAFF;
     color: #333984;
+}
+
+.container {
+    padding: 0px 50px;
 }
 
 
@@ -247,7 +251,7 @@ body {
 .cursos .boxes-cursos {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 20px 12px;
+    gap: 35px 27px;
     max-width: 50vw;
 }
 
@@ -282,4 +286,81 @@ body {
     color: var(--light-gray);
     font-weight: 500;
     font-size: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--blue);
+    /* padding: 60px 0px; */
+    margin-top: 169px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.contatos ul {
+    list-style: none;
+    margin-top: 33px;
+}
+
+.contatos li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+
+.cps img {
+    position: relative;
+    right: 25px;
+}
+
+.cps p {
+    font-weight: 500;
+    position: relative;
+    bottom: 20px;
+    font-size: 22px;
+    max-width: 294px;
+}
+
+.contatos p {
+    margin-left: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.links ul {
+    margin-top: 50px;
+    position: relative;
+    right: 40px;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.links li a {
+    position: relative;
+    bottom: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.links li a:hover {
+    background: #4a90d1;
+    border-radius: 10px;
 }
