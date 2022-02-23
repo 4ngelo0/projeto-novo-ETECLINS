@@ -37,6 +37,10 @@ body {
     border-radius: 0px 0px 10px 10px;
 }
 
+.logo {
+    margin-top: 13px;
+}
+
 .nav ul {
     display: flex;
     align-items: center;
@@ -95,7 +99,9 @@ body {
 }
 
 .botao {
+    text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     border: none;
     cursor: pointer;
@@ -115,6 +121,7 @@ body {
 }
 
 .botao span {
+    text-decoration: none;
     margin-left: 17px;
     margin-top: 5px;
 }
@@ -250,7 +257,7 @@ body {
 
 .cursos .boxes-cursos {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 35px 27px;
     max-width: 50vw;
 }
@@ -258,7 +265,7 @@ body {
 .cursos .box-curso {
     border-radius: 10px;
     background: #fff;
-    padding: 21px 20px 5px 19px;
+    padding: 21px 10px 10px 41px;
     box-shadow: 0px 0px 20px #C6C4DF;
     transition: 0.3s;
 }
@@ -278,14 +285,14 @@ body {
 
 .cursos .box-curso h1 {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.2em;
     margin-left: 10px;
 }
 
 .cursos .box-curso p {
     color: var(--light-gray);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.1em;
 }
 
 
