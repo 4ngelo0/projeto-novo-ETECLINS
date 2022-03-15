@@ -3,7 +3,8 @@
     --blue: #5CA6EB;
     --light-gray: #A8A7B9;
 }
-
+html{
+    scroll-behavior
 body {
     padding: 0;
     margin: 0px;
