@@ -212,7 +212,7 @@ body {
     position: relative;
     bottom: 50px;
     right: 30px;
-    background-image: url(/img/etec-img.png);
+    background-image: url(./img/etec-img.png);
     box-shadow: -10px -10px 20px rgba(198, 196, 223, 0.7);
     border-radius: 20px 0px 0px 0px;
     height: 317px;
